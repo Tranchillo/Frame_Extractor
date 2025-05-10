@@ -658,7 +658,7 @@ def clear_screen():
 def print_header():
     """Stampa l'intestazione del programma"""
     print(f"\n{'='*70}")
-    print(f"   SCENE EXTRACTOR PER LORA TRAINING")
+    print(f"   ESTRATTORE IMMAGINI")
     if CUDA_AVAILABLE:
         print(f"   GPU: {GPU_NAME}")
     else:
