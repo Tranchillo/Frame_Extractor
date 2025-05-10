@@ -658,7 +658,7 @@ def clear_screen():
 def print_header():
     """Print the program header"""
     print(f"\n{'='*70}")
-    print(f"   SCENE EXTRACTOR FOR LORA TRAINING")
+    print(f"   FRAME EXTRACTOR")
     if CUDA_AVAILABLE:
         print(f"   GPU: {GPU_NAME}")
     else:
