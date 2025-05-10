@@ -1,7 +1,4 @@
-# Frame_Extractor
-Automatically detects scenes in a video and extracts the sharpest frames for training AI models. Supports GPU acceleration with PyTorch, customizable parameters, time-range selection, and high-quality frame output (JPG/PNG). Perfect for preparing datasets for LoRA fine-tuning.
-
-# Frame Extractor for LoRA Training
+# Frame Extractor
 
 This program automatically extracts high-quality frames from video files to create training datasets for LoRA models. The program automatically divides the video into scenes, selects the sharpest frames, and saves them in image format.
 
