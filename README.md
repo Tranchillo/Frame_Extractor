@@ -65,6 +65,14 @@ If the command works, you should see output similar to this:
 
 Take note of the CUDA version reported (in the example it's 12.2).
 
+#### Installing basic dependencies
+
+Install the main dependencies using the requirements.txt file:
+
+```bash
+pip install -r requirements.txt
+```
+
 #### Installing PyTorch with CUDA support
 
 Based on the CUDA version shown by `nvidia-smi`, choose the correct installation command:
@@ -81,12 +89,10 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
 
-#### Installing other dependencies
-
-Install the other required dependencies:
+- If you don't have a GPU or prefer to use CPU only:
 
 ```bash
-pip install opencv-python numpy tqdm scenedetect
+pip install torch torchvision torchaudio
 ```
 
 ## Usage
