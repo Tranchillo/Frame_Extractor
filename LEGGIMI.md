@@ -1,4 +1,4 @@
-# Estrattore Immagini per Addestramento LoRA
+# Estrattore Immagini
 
 Questo programma consente di estrarre automaticamente fotogrammi di alta qualità da file video per creare dataset di addestramento per modelli LoRA. Il programma divide automaticamente il video in scene, seleziona i fotogrammi più nitidi e li salva in formato immagine.
 
@@ -65,6 +65,14 @@ Se il comando funziona, dovresti vedere un output simile a questo:
 
 Prendi nota della versione CUDA riportata (nell'esempio è 12.2).
 
+#### Installazione delle dipendenze di base
+
+Installa le dipendenze principali utilizzando il file requirements.txt:
+
+```bash
+pip install -r requirements.txt
+```
+
 #### Installazione PyTorch con supporto CUDA
 
 In base alla versione CUDA mostrata da `nvidia-smi`, scegli il comando di installazione corretto:
@@ -81,12 +89,10 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 ```
 
-#### Installazione di altre dipendenze
-
-Installa le altre dipendenze necessarie:
+- Se non hai una GPU o preferisci usare solo CPU:
 
 ```bash
-pip install opencv-python numpy tqdm scenedetect
+pip install torch torchvision torchaudio
 ```
 
 ## Utilizzo
